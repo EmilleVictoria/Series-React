@@ -24,6 +24,7 @@ export const Serie = styled.li`
     span{
         font-weight: bold;
         font-size:120%; 
+        text-align: center;
     }
     a:hover{
         transform: scale(1.1);
