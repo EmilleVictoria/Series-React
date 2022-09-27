@@ -1,5 +1,6 @@
 import { Container, SerieList, Serie } from "./style";
 import {useState, useEffect} from "react"
+import { Link } from "react-router-dom";
 
 function Home(){
 
@@ -23,7 +24,8 @@ function Home(){
             {series.map(serie =>{
                 return(
                     <Serie key={serie.id}>
-                        <a href='#'><img src={`${image_path}${serie.poster_path}`} alt={serie.titulo}/></a>
+
+                        <Link to={`/details/${serie.id}`}><img src={`${image_path}${serie.poster_path}`} alt={serie.titulo}/></Link>
                         <span>{serie.name}</span>
                     </Serie>
                 )
