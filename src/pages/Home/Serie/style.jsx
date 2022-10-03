@@ -34,3 +34,8 @@ export const Serie = styled.li`
     }
     
 `
+export const Filtro = styled.input`
+    backgroud-color: black;
+
+`
+
