@@ -19,7 +19,9 @@ function Details(){
                 sinopse: data.overview,
                 imagem: `${image_path}${data.poster_path}`,
                 temporadas: data.number_of_seasons,
-                episodios: data.number_of_episodes
+                episodios: data.number_of_episodes,
+                dataInicio: data.first_air_date,
+                nota: data.vote_average
             }
             setSerie(serie)
         })
@@ -31,8 +33,10 @@ function Details(){
                 <div className="details">
                     <h1>{serie.titulo}</h1>
                     <span>Sinopse: {serie.sinopse}</span>
-                    <span className="EpTemp">Temporadas: {serie.temporadas}</span>
-                    <span className="EpTemp">Episódios: {serie.episodios}</span>
+                    <span className="InformAdic">Lançamento: {serie.dataInicio}</span>
+                    <span className="InformAdic">Temporadas: {serie.temporadas}</span>
+                    <span className="InformAdic">Episódios: {serie.episodios}</span>
+                    <span className="InformAdic">Nota: {serie.nota}</span>
                     <Link to='/'><button>Voltar ao ínicio</button></Link>
                 </div>
             </div>

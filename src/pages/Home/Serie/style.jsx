@@ -2,7 +2,7 @@ import styled from "styled-components"
 export const Container = styled.div`
  h1{
     text-align: center;
-    margin: 4rem 0;
+    margin: 2rem 0;
  }
 `
 export const SerieList = styled.ul`
@@ -33,9 +33,5 @@ export const Serie = styled.li`
         transition: all 0.3s;
     }
     
-`
-export const Filtro = styled.input`
-    backgroud-color: black;
-
 `
 

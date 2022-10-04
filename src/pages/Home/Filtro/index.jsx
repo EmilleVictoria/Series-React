@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
+import { Formulario, Input } from './style';
 
-export default function Filtro(props) {
+function Filtro(props) {
   const [inputValue, setInputValue] = useState('');
 
   function handleInputChange(event) {
@@ -9,10 +10,10 @@ export default function Filtro(props) {
   }
 
   return (
-    <div className='row'>
-      <div className='col-12 col-lg-9'>
-        <input type='text' value={inputValue} onChange={handleInputChange} className='form-control' placeholder='Filtro' />
-      </div>
-    </div>
+    <Input>
+    <Formulario type='text' value={inputValue} onChange={handleInputChange} className='form-control' placeholder='Search'></Formulario>
+    </Input>
   )
 }
+
+export default Filtro;

@@ -27,7 +27,7 @@ padding: 0 3rem;
     line-height: 130%;
   }
 
-  .EpTemp {
+  .InformAdic {
     font-size: 100%;
     opacity: 0.5;
   }

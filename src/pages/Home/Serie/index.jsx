@@ -34,7 +34,7 @@ function Home(){
 
     return(
     <Container>
-        <h1>Séries</h1>
+        <h1>Most Trending Series</h1>
 
 
         <Filtro onChangeFiltroValue={handleFiltroValue} />
