@@ -1,23 +1,25 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-padding: 0 3rem;
+  padding: 0 3rem;
   
   h1 {
     margin: 3rem 0;
   }
 
   .serie {
-    display: flex;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     align-items: center;
     justify-content: center;
-    height: 100vh;
   }
 
   img {
-    width: 300px;
+    width: 350px;
     border-radius: 1rem;
     margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 
   span {
@@ -38,6 +40,7 @@ padding: 0 3rem;
     align-items: flex-start;
     margin-left: 6rem;
     max-width: 50%;
+    
   }
 
   button {
